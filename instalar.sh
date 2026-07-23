@@ -20,9 +20,9 @@ fi
 # PASSO 0.2: Definição de Usuário e Senha Segura
 USUARIO="carlos"
 echo "[0/9] Configuração de credenciais:"
-read -s -p "Digite a senha para o usuário '$USUARIO' e para o ROOT: " SENHA
+read -p "Digite a senha para o usuário '$USUARIO' e para o ROOT: " SENHA
 echo
-read -s -p "Confirme a senha: " SENHA_CONFIRM
+read -p "Confirme a senha: " SENHA_CONFIRM
 echo
 if [ "$SENHA" != "$SENHA_CONFIRM" ] || [ -z "$SENHA" ]; then
     echo "❌ Erro: As senhas não coincidem ou estão em branco. Abortando."
